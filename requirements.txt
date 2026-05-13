@@ -1,0 +1,15 @@
+# ============================================================
+# AI-Driven Stock Market Intelligence Suite
+# requirements.txt — Pin versions for reproducibility
+# AI Backend: Google Gemini (via REST API — no extra SDK needed)
+# ============================================================
+
+streamlit==1.35.0
+yfinance==0.2.54
+pandas==2.2.2
+numpy==1.26.4
+plotly==5.22.0
+scikit-learn==1.5.0
+newsapi-python==0.2.7
+python-dotenv==1.0.1
+requests==2.32.3
