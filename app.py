@@ -76,12 +76,11 @@ html, body, [class*="css"] {
 
 /* ── Main container ── */
 .main .block-container {
-    padding: 1.2rem 1.5rem 2rem !important;
-    max-width: 1400px;
-}
-
-/* ── Sidebar ── */
-[data-testid="stSidebar"] {
+    col1, col2 = st.sidebar.columns(2)
+with col1:
+    start_date = st.date_input("From", value=pd.to_datetime("2025-01-01"))
+with col2:
+    end_date = st.date_input("To", value=pd.to_datetime("today")) {
     background: linear-gradient(180deg, #0d1321 0%, #111827 100%) !important;
     border-right: 1px solid var(--border-color) !important;
 }
